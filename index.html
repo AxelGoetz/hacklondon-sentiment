@@ -121,7 +121,7 @@ function draw() {
     .scale(y)
     .orient("left");
 
-  d3.csv("./dump.csv", function(error, data) {
+  d3.csv("./data.csv", function(error, data) {
     if (error) throw error;
     for(var i = 0; i < data.length; i++) {
       data[i].datetime = data[i].datetime.substr(0, 19);
